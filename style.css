@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Grid Areas */
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+/* H TAGS */
+h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav";
+    background-color: #f7ce69;
+
+}
+
+/*Header*/
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+}
+
+/*Company Name*/
+.header h2{
+    padding-top: 50px;
+}
+
+/* Navbar Codes */
+nav {
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    width: 33%;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: black;
+}
+
+/*Content | Foods*/
+.content {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.content section article ul li {
+    margin: 10px;
+}
+
+/* CONTENT IMAGE */
+.content section article ul li img {
+    width: 220px;
+    height: 160px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* CONTENT HR */
+.content section article ul li hr {
+    width: 200px;
+    margin: 5px auto;
+    border: none;
+    border-top: 2px solid black;
+    
+}
