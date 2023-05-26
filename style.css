@@ -13,6 +13,14 @@
     grid-area: nav;
 }
 
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
 /* H TAGS */
 h2,h3,h4 {
     font-family: 'Montserrat', sans-serif;
@@ -30,7 +38,9 @@ p {
     display: grid;
     grid-template-areas: 
     "header"
-    "nav";
+    "nav"
+    "content"
+    "footer";
     background-color: #ddcb9c;
 
 }
@@ -93,4 +103,23 @@ nav ul li a {
     margin: 5px auto;
     border: none;
     border-top: 2px solid black; 
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    background-color: #e4d4af;
+    border-radius: 17px 17px 0px 0px;
+    
+}
+
+.footer footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.footer footer p a {
+    text-decoration: none;
+    text-shadow: 1px 1px 30px;
+    color: rgb(41, 40, 40);
 }
